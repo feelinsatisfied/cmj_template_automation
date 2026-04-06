@@ -1,0 +1,47 @@
+GUI Type,API Type
+# Standard Jira field types
+Text Field (single line),com.atlassian.jira.plugin.system.customfieldtypes:textfield
+Text Field (multi-line),com.atlassian.jira.plugin.system.customfieldtypes:textarea
+Select List (single choice),com.atlassian.jira.plugin.system.customfieldtypes:select
+Select List (multiple choices),com.atlassian.jira.plugin.system.customfieldtypes:multiselect
+Checkboxes,com.atlassian.jira.plugin.system.customfieldtypes:multicheckboxes
+Radio Buttons,com.atlassian.jira.plugin.system.customfieldtypes:radiobuttons
+Date Picker,com.atlassian.jira.plugin.system.customfieldtypes:datepicker
+Date Time Picker,com.atlassian.jira.plugin.system.customfieldtypes:datetime
+Number Field,com.atlassian.jira.plugin.system.customfieldtypes:float
+Labels,com.atlassian.jira.plugin.system.customfieldtypes:labels
+URL Field,com.atlassian.jira.plugin.system.customfieldtypes:url
+User Picker (single user),com.atlassian.jira.plugin.system.customfieldtypes:userpicker
+User Picker (multiple users),com.atlassian.jira.plugin.system.customfieldtypes:multiuserpicker
+Group Picker (single group),com.atlassian.jira.plugin.system.customfieldtypes:grouppicker
+Group Picker (multiple groups),com.atlassian.jira.plugin.system.customfieldtypes:multigrouppicker
+Version Picker (single version),com.atlassian.jira.plugin.system.customfieldtypes:version
+Version Picker (multiple versions),com.atlassian.jira.plugin.system.customfieldtypes:multiversion
+Cascading Select,com.atlassian.jira.plugin.system.customfieldtypes:cascadingselect
+Read Only Text,com.atlassian.jira.plugin.system.customfieldtypes:readonlyfield
+# Agile/Sprint fields
+Jira Sprint Field,com.pyxis.greenhopper.jira:gh-sprint
+Sprint,com.pyxis.greenhopper.jira:gh-sprint
+Epic Link Relationship,com.pyxis.greenhopper.jira:gh-epic-link
+Epic Link,com.pyxis.greenhopper.jira:gh-epic-link
+Name of Epic,com.pyxis.greenhopper.jira:gh-epic-label
+Epic Name,com.pyxis.greenhopper.jira:gh-epic-label
+Epic Status,com.pyxis.greenhopper.jira:gh-epic-status
+Epic Colour,com.pyxis.greenhopper.jira:gh-epic-color
+Rank,com.pyxis.greenhopper.jira:gh-lexo-rank
+# Advanced Roadmaps / Portfolio
+Target start,com.atlassian.jpo:jpo-custom-field-baseline-start
+Target end,com.atlassian.jpo:jpo-custom-field-baseline-end
+Parent Link,com.atlassian.jpo:jpo-custom-field-parent
+# Teams
+Team,com.atlassian.teams:rm-teams-custom-field-team
+# ScriptRunner
+Scripted Field,com.onresolve.jira.groovy.groovyrunner:scripted-field
+# Checklist
+Checklist,com.okapya.jira.checklist:checklist
+# Zephyr
+Zephyr Teststep Field Type,com.thed.zephyr.je:zephyr-je-customfield-teststep
+# Risk Management
+RiskIndexNumberField,com.ja.jira.plugin.report.riskmanagement:RiskIndexNumberField
+# System fields (skip matching)
+System field,SYSTEM_FIELD
