@@ -89,10 +89,10 @@ def archive_project(project_key):
         for f in SOURCE_DATA_DIR.glob('*_Customer_Mapping*.xlsx'):
             files_to_archive.append(f)
 
-        # CMJ snapshot files for this project
+        # CMJ snapshot files (archive all CSV files in the folder)
         cmj_dir = SOURCE_DATA_DIR / 'cmj_snapshot_objs'
         if cmj_dir.exists():
-            for f in cmj_dir.glob(f'{project_key}*.csv'):
+            for f in cmj_dir.glob('*.csv'):
                 files_to_archive.append(f)
 
         # Source API data
@@ -178,9 +178,10 @@ def archive_project(project_key):
         f.unlink()
         print(f"  ✗ Removed {f.name}")
 
+    # Clean all CMJ snapshot CSV files
     cmj_dir = SOURCE_DATA_DIR / 'cmj_snapshot_objs'
     if cmj_dir.exists():
-        for f in cmj_dir.glob(f'{project_key}*.csv'):
+        for f in cmj_dir.glob('*.csv'):
             f.unlink()
             print(f"  ✗ Removed cmj_snapshot_objs/{f.name}")
 
